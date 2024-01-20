@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Python Compiler</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Online Python Compiler</h1>
+    </div>
+
+    <div class="code-container">
+        <textarea id="code" name="code" style="display: none;"></textarea>
+        <div id="codeMirror"></div>
+        <br>
+        <button onclick="compileCode()">Run</button>
+    </div>
+
+    <div id="output"></div>
+
+    <div class="footer">
+        &copy; 2024 Online Python Compiler
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/python/python.min.js"></script>
+    <script src="{{ url_for('static', filename='compileCode.js') }}"></script>
+
+</div>
+
+
+
+
+
+</body>
+</html>
