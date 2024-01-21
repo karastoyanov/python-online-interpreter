@@ -4,7 +4,7 @@
 var editor = CodeMirror(document.getElementById('codeMirror'), {
     mode: 'python',
     lineNumbers: true,
-    theme: 'material-darker', // You can choose a different theme
+    theme: 'dracula', // You can choose a different theme
 });
 
 // Get the value of CodeMirror editor when running the code
