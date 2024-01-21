@@ -26,23 +26,23 @@
         <div class="header">
             <h1>Online Python Compiler</h1>
         </div>
-
         <div class="code-container">
-            <textarea id="code" name="code" style="display: none;"></textarea>
-            <div id="codeMirror"></div>
+            <label for="input" class="label">Input:</label>
+            <textarea id="pythonCode" name="code" style="display: none;"></textarea>
             <br>
             <button onclick="compileCode()">Run</button>
+            <br>
+
+            <label for="output" class="label">Output:</label>
+            <div for="output" id="output" class="CodeMirror cm-s-dracula"></div>
         </div>
-
-        <div class='output-field'id="output"></div>
-
+        <div class="footer">
+            Online Python Compiler 2024
+        </div>
     </div>
 
-    <div class="footer">
-        Aleksandar Karastoyanov / Online Python Compiler 2024
-    </div>
 
-    <script src="{{ url_for('static', filename='compileCode.js') }}"></script>
+    <script src="{{ url_for('static', filename='./compileCode.js') }}"></script>
 
 
 </body>
