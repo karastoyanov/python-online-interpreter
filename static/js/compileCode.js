@@ -1,13 +1,5 @@
 // static/script.js
 
-// Initialize CodeMirror
-// var editor = CodeMirror(document.getElementById('codeMirror'), {
-//     mode: 'python',
-//     lineNumbers: true,
-//     theme: 'dracula', // You can choose a different theme
-// });
-
-
 // Initialize CodeMirror on a textarea with id "pythonCode" for input
 var inputEditor = CodeMirror.fromTextArea(document.getElementById("pythonCode"), {
     lineNumbers: true,
